@@ -1,0 +1,22 @@
+{
+   "$schema": "https://json.schemastore.org/tsconfig",
+   "compilerOptions": {
+      "strict": false,
+      "allowJs": false,
+      "checkJs": false,
+      "target": "ESNext",
+      "moduleResolution": "Node",
+      "declaration": true,
+      "esModuleInterop": true,
+      "module": "CommonJS",
+      "outDir": "lib"
+   },
+   "include": [
+      "src"
+   ],
+   "exclude": [
+      "node_modules",
+      "example",
+      "lib"
+   ]
+}

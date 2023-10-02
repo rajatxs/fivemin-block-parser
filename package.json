@@ -1,0 +1,24 @@
+{
+  "name": "@rxpm/fivemin-block-parser",
+  "version": "0.0.1",
+  "description": "Simple Editor.js block data parser for Fivemin platform",
+  "main": "lib/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "fivemin",
+    "rxpm",
+    "editorjs"
+  ],
+  "author": {
+    "name": "Rajat Sharma",
+    "email": "rxx256+npm@outlook.com",
+    "url": "https://github.com/rajatxs"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
