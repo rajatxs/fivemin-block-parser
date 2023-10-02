@@ -6,7 +6,7 @@ Simply converts [Editor.js](https://editorjs.io) block data to HTML format.
 
 - [Node.js 18](https://nodejs.org/en/download)
 
-### Installation
+## Installation
 
 Add dependency in your existing project.
 
