@@ -18,6 +18,13 @@
     "url": "https://github.com/rajatxs"
   },
   "license": "ISC",
+  "repository": "https://github.com/rajatxs/fivemin-block-parser.git",
+  "readme": "https://github.com/rajatxs/fivemin-block-parser#readme",
+  "bugs": {
+    "email": "rxx256+npm@outlook.com",
+    "url": "https://github.com/rajatxs/fivemin-block-parser/issues"
+  },
+  "markdown": "github",
   "devDependencies": {
     "typescript": "^5.2.2"
   }

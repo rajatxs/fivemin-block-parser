@@ -1,10 +1,18 @@
 # Fivemin Block Parser
 
-Simply converts Editor.js block data to HTML format.
+Simply converts [Editor.js](https://editorjs.io) block data to HTML format.
 
 ## Requirements
 
 - [Node.js 18](https://nodejs.org/en/download)
+
+### Installation
+
+Add dependency in your existing project.
+
+```shell
+npm i @rxpm/fivemin-block-parser
+```
 
 ## Usage
 
