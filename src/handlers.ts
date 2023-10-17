@@ -166,7 +166,7 @@ export const codeHandler: Handler<CodeData> = ({ data, id }): string => {
    let html = ''
 
    // insert <pre> element
-   html += `\t<pre class="content__code">\n${data.code}\n\t</pre>`
+   html += `<pre class="content__code">${data.code}</pre>`
 
    // insert container
    html = `<div id="${uid}" class="content__code_block">\n${html}\n</div>`
