@@ -1,6 +1,6 @@
 {
   "name": "@rxpm/fivemin-block-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple Editor.js block data parser for Fivemin platform",
   "main": "lib/index.js",
   "type": "commonjs",
