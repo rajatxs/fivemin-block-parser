@@ -89,7 +89,7 @@ export const imageHandler: Handler<ImageData> = ({ data, id }): string => {
    let html = ''
 
    // insert image element
-   html += `\t<img src="${data.file.url}" alt="${caption}" class="content__image" width="100%" height="auto" />\n`
+   html += `\t<img src="${data.file.url}" alt="${caption || refName}" class="content__image" width="100%" height="auto" />\n`
 
    // insert image caption
    if (caption.length > 0) {
@@ -98,7 +98,7 @@ export const imageHandler: Handler<ImageData> = ({ data, id }): string => {
 
    // insert image reference badge
    if (refName.length > 0 && refUrl.length > 0) {
-      html += `\n\t<a href="${refUrl}" target="_blank" class="content__image_ref"><small>${refName}</small></a>`
+      html += `\n\t<a href="${refUrl}" target="_blank" class="content__image_ref" aria-hidden="true" tabindex="-1"><small>${refName}</small></a>`
    }
 
    // insert root element
