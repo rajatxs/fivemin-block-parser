@@ -30,6 +30,7 @@ export interface TableData {
 
 export interface CodeData {
    code: string
+   mode?: string
 }
 
 export interface WarningData {
