@@ -98,7 +98,7 @@ export const imageHandler: Handler<ImageData> = ({ data, id }): string => {
 
    // insert image reference badge
    if (refName.length > 0 && refUrl.length > 0) {
-      html += `\n\t<a href="${refUrl}" target="_blank" class="content__image_ref" aria-hidden="true" tabindex="-1"><small>${refName}</small></a>`
+      html += `\n\t<a rel="nofollow" href="${refUrl}" target="_blank" aria-hidden="true" tabindex="-1" class="content__image_ref"><small>${refName}</small></a>`
    }
 
    // insert root element
@@ -163,13 +163,14 @@ export const tableHandler: Handler<TableData> = ({ data, id }): string => {
  */
 export const codeHandler: Handler<CodeData> = ({ data, id }): string => {
    const uid = `block-${id}`
+   const { mode = 'text' } = data
    let html = ''
 
    // insert <pre> element
    html += `<pre class="content__code">${data.code}</pre>`
 
    // insert container
-   html = `<div id="${uid}" class="content__code_block">\n${html}\n</div>`
+   html = `<div id="${uid}" data-code-mode="${mode}" class="content__code_block">\n${html}\n</div>`
 
    return html
 }
